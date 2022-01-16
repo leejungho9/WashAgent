@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wash</title>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+   
+    <!-- CSS 연결-->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!--lodash cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+     <!--gsap cdn-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!--JavaScript 연결-->
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <a herf="/">세탁요원</a>
+            </div>
+
+            <div class="sub-menu">
+                <ul class="menu">
+                    <li>
+                        <a href="#main_content">이용방법</a>
+                    </li>
+                    <li>
+                        <a href="#main_content2">서비스지역</a>
+                    </li>
+                    <li>
+                        <a href="#">신청하기</a>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--BANNER-->
+    <div class="banner"></div>
+    <!--CONTENT MENU-->
+    <div class="main_content" id="main_content">
+        <div class="main_content__title" >
+            <br><br><br><br><br>
+            <h2>세탁요원 이용방법</h2>
+            <p>빨래는 세탁요원에게 맡기고 여유로운 삶을 느껴보세요.</p>
+        </div>
+        <div class="main_content__menu">
+            <ul class="main_menu">
+                <li>
+                    <a href="#">1. 서비스 신청</a>
+                </li>
+                <li>
+                    <a href="#">2. 수거요청</a>
+                </li>
+                <li>
+                    <a href="#">3. 세탁진행</a>
+                </li>
+                <li>
+                    <a href="#">4. 배달완료</a>
+                </li>
+            </ul>
+        </div>
+        <!--CONTENT1 -->
+        <div class="main_content_1" >
+            <div class="content1">
+                <p class="content1__title">STEP1</p>
+                <p class="content1_title__sub1">나에게 맞는 서비스 종류를 신청하세요.</p>
+                <p class="content1_title__sub2">프리미엄 세탁, 수선, 오염케어, 천연세제 등 부가 서비스 추가 가능</p>
+            </div>
+
+            <div class="content_service">
+                <!-- CONTENT1 -- service1-->
+                <div class="service s_service1">
+                    <div class="service__content">
+                        <p class="service__title service_title_1">개별 클리닉 서비스</p>
+                        <p class="service__title_sub service_title_sub_1">배달완료드라이클리닝뿐만 아니라 웨트클리닝까지. 개별 품목의 권장된 케어라벨에 따라 세탁하고, 오염 제거를 위한 다양한 케어가 포함됩니다.</p>
+                    </div>
+
+                    <div class="service_img service1_img">
+                        <img src="/img/service1.png" alt="서비스1">
+                    </div>
+                </div>
+            
+            <!--CONTENT1 -- service2-->
+         
+                <div class="service s_service2">
+                    <div class="service__content">
+                        <p class="service__title service_title_2">생활 빨래 서비스</p>
+                        <p class="service__title_sub service_title_sub_2">봉투에 수건, 양말, 잠옷 같은 빨랫감을 담아주시면 단독 물세탁하고 보송하게 개어 드립니다</p>
+                    </div>
+                    
+                    <div class="service_img service2_img">
+                        <img src="/img/service2.png" alt="서비스2">
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+    </div>
+         <!--CONTENT2 -->
+    <div class="main_content2" id="main_content2">
+        <div class="main_content__title" >
+            <h2>세탁요원 서비스지역</h2>
+            <p>세요권</p>
+        </div>
+        <!--CONTENT2 --service -->
+        <div class=" service_img service3_img">
+            <img src="/img/service3.png" alt="서비스3">
+        </div>
+        <div class="region">
+            <div class="circle circle1">서울</div>
+            <div class="circle circle2">일산</div>
+            <div class="circle circle3">분당</div>
+            <div class="circle circle4">판교</div>
+            <div class="circle circle5">위례</div>
+        </div>
+        <h2>해당 지역에서 세탁요원을 이용하실 수 있습니다.</h2>
+
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="footer footer1">
+            <p>평일 오전9시 ~ 오후 10시</p>
+            <p>주말/공휴일 오전 11시 ~ 오후 10시</p>
+            <p>전화문의 :  <a href="tel:+11341234"> 1134-1234 </a></p>
+            <p>제휴문의 : <a href="business@washahent.com">business@washahent.com</a></p>
+        </div>
+        <div class="footer footer2">
+            <p>(주)WashAgent</p>
+            <p>대표 : 이정호 |  주소 서울시 강서구 양천로 51길 40 (12322)</p>
+            <p>사업자등록번호 : 654-12-23456</p>
+        </div>
+    </footer>
+</body>
+</html>
