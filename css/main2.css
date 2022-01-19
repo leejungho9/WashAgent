@@ -1,0 +1,34 @@
+.container {
+    width:300vw;
+    border: 1px solid red;
+    transition: transform 0.5s;
+}
+
+.inner {
+    width :100vw;
+    float :left
+}
+
+.inner1 {
+    background-color: blue;
+}
+.inner2 {
+    background-color: orange;
+}
+
+
+.fromTopIn
+{
+    transition: transform 1.0s ease, opacity 1.0s ease;
+    
+    transform: translate(0,0);
+    opacity: 1.0;
+}
+
+.fromTopOut
+{
+    transition: transform 1.0s ease, opacity 1.0s ease;
+    
+    transform: translate(0,-10px);
+    opacity: 0.0;
+}

@@ -1,5 +1,5 @@
 body{
-   
+    font-family: 'Noto Sans KR', sans-serif;
 }
 /*COMMON*/
 img {
@@ -9,35 +9,28 @@ img {
 a{
     text-decoration: none;
 }
-.main_content__title{
+
+.main_title{
     width: 100%;
     min-height: 20px;
     padding: 40px;
     box-sizing: border-box;
 }
- .main_content__title h2 {
+ .main_title h2 {
     font-size: 25px;
     font-weight: bold;    
     text-align: center;    
     padding: 5px;
     box-sizing: border-box;
 }
- .main_content__title p {
+ .main_title p {
     font-size: 15px;
     text-align: center;    
     padding: 10px;
     box-sizing: border-box;
     
 }
-.banner {
-    background-image: url("/img/banner3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    width:100%;
-    height: 600px;
-}
+
 /*HEADER*/
 header {
     position: fixed;
@@ -48,20 +41,24 @@ header {
 header .inner {
     position: relative;
     width: 1100px;
-    height: 80px;
+    height: 60px;
     margin: 0 auto;
     padding: 30px;
     box-sizing: border-box;
-    
-    
 }
-
+.logo{
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    bottom: 0;
+    align-items: center;
+}
 header .inner .logo a  {
     font-size : 25px;
     font-weight: bold;
     color: white;
-    cursor: pointer;
-    
+    cursor: pointer;  
 } 
 
 header .inner .sub-menu ul{
@@ -74,31 +71,61 @@ header .inner .sub-menu ul{
     margin: auto 0;
 }
 
-header .inner .sub-menu ul.menu li{
+header .inner .sub-menu .menu li{
     padding: 20px;
     box-sizing: border-box;
 }
 
-header .inner .sub-menu ul.menu li a{
+header .inner .sub-menu .menu li a{
     color : white;
     font-size : 13px;
     font-weight: bold;
 }
-.main_content {
-    min-height: 1050px;
-    background-color: rgba(252, 255, 216, 0.24);
-   
+/*BANNER*/
+.banner {
+    background-image: url("/img/banner3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width:100%;
+    height: 800px;
+    position :relative
+}
+.banner h2 {
+    color : rgb(58, 58, 58);
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    left : 20%;
+    top: 30%;
+    text-shadow:1px 1px 3px #333;
+}
+.banner span {
+    color : black;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left : 20%;
+    top: 40%;
+    line-height: 1.5;
+    text-shadow:1px 1px 1px #333;
 }
 
-.main_content .main_content__menu {
+/*manual MENU*/
+.manual {
+    min-height:950px;
+    background-color:#f6f5ef; 
+    padding: 60px;
+}
+.manual .tab_menu {
     width: 500px;
     min-height: 40px;
     position: relative;
     margin-top: 20px;
     margin: auto;
-
 } 
-.main_content .main_content__menu ul.main_menu {
+.manual .tab_menu .menu {
     display: flex;
     position: absolute;
     top: 0;
@@ -108,27 +135,44 @@ header .inner .sub-menu ul.menu li a{
     align-items: center;
     justify-content: center;
 }
-.main_content .main_content__menu ul.main_menu li {
+.manual .tab_menu .menu li {
     padding: 20px;
 }
-.main_content .main_content__menu ul.main_menu li a {
-    font-size: 15px;
-    font-weight: bold;
-    color : #333;
+.manual .tab_menu .menu ul {
+    position: relative;
+    z-index: 1;
 }
-.main_content .main_content__menu ul.main_menu li a:hover{
-    color : #e9e19e;
+/*maual menu event*/
+.manual .tab.active {
+    color : #e9e19e;;
+}
+.manual .tab_menu span.border{
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: #e9e19e;;
+    left: 45px;
+    bottom: 0;
+    z-index: 2;
+    transition: 0.4s;
 }
 
+.manual .tab_menu .menu li a {
+    font-size: 15px;
+    font-weight: bold;
+    /* color : #333; */
+}
+
+
 /*CONTENT*/
-.main_content .main_content_1 {
+.manual .tab-conent {
     min-height: 400px;
     margin-top: 60px;
     text-align: center;
     
     
 }
-.main_content .main_content_1 .content1 {
+.manual .tab-conent .step1 {
     width: 750px;
     text-align: left;
     margin: auto;
@@ -137,39 +181,42 @@ header .inner .sub-menu ul.menu li a{
 
 }
 
-.main_content .main_content_1 .content1 p.content1__title {
+.manual .tab-conent .step1 .step1__title {
     font-style: italic;
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 400;
     color : #e9e19e;
     box-sizing: border-box;
     margin-bottom: 20px;
+    font-style: italic;
+    font-family: 'Song Myung', serif;
 
 }
 
-.main_content .main_content_1 .content1  p.content1_title__sub1 {
+.manual .tab-conent .step1 .step1_title__sub1 {
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.main_content .main_content_1 .content1 p.content1_title__sub2 {
+.manual .tab-conent .step1 .step1_title__sub2 {
     font-size: 13px;
 }
 
 /*SERVICE*/
-.main_content .main_content_1 .content_service {
+
+.manual .tab-conent .step1_service {
     display: flex;
     justify-content: center;
     min-height: 10px;
     margin: 10px;
   
 }
-.main_content .main_content_1 .content_service .service {
+.manual .tab-conent .step1_service .service {
     width : 400px;
 }
 
-.main_content .main_content_1 .content_service .service__content {
+.manual .tab-conent .step1_service .service__content {
     width: 90%;
     height: 100px;
     margin: auto;
@@ -177,95 +224,71 @@ header .inner .sub-menu ul.menu li a{
     margin-bottom: 10px;
     text-align: left;
 }
-.main_content .main_content_1 .content_service .service__content p.service__title {
+.manual .tab-conent .step1_service .service__content .service__title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
 }
-.main_content .main_content_1 .content_service .service__content p.service__title_sub {
+.manual .tab-conent .step1_service .service__content .service__title_sub {
     font-size: 15px;
     line-height: 23px;
 
 }
 
-.main_content .main_content_1 .content_service .service_img {
+.manual .tab-conent .step1_service .service_img {
     display: flex;
     width: 100%;
     justify-content: center;
     
 }
-.main_content .main_content_1 .content_service .service_img img {
+.manual .main_content1 .step1_service .service_img img {
     width: 90%;
     border-radius: 10px;
 }
-
-
-
-/*CONTENT2*/
-.main_content2 {
-    min-height: 870px;
-    background-color: rgba(224, 224, 224, 0.32);
+/*tab-content event */
+.manual .items {
+    position: relative;
+    display:none;
+    transition:0.5s;
+}
+.manual .items.active {
+    display: block;
 }
 
-.main_content2 .service3_img {
+/*service-area*/
+.service-area {
+    min-height: 850px;
+    background-color: #F6F6F6;
+    padding: 60px;
+}
+.service-area .service3_img {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: 60px;
 }
-.main_content2 .service3_img img {
+.service-area .service3_img img {
     width: 600px;
 }
-.main_content2 .region{
+.service-area .area{
     display: flex;
     justify-content: center;
     line-height: 4;
     text-align: center;
     font-weight: bold;
     margin-bottom: 20px;
-    
 }
-.main_content2 .region .circle{
+.service-area .area .circle{
     width : 70px;
     height : 70px;
     border-radius: 50%;
     background-color: rgb(207, 226, 238);
     margin: 20px;
-
 }
-
-.main_content2 h2 {
+.service-area h2 {
     text-align: center;
 }
-/*VISUAL*/
-.visual { 
-    margin-top: 150px;
 
-}
-
-.visual .inner {
-
-}
-.visual .title {
-
-}
-.visual .title .btn {
-
-}
-.visual .cup1.image {
-
-}
-.visual .cup1.text{
-
-}
-.visual .cup2.image{
-
-}
-.visual .cup2.text {
-
-}
-.visual .spoon{
-
-}
 /*FOOTER*/
 footer {
     width: 100%;
@@ -288,3 +311,78 @@ footer {
 footer .footer a {
     color : white;
 }
+
+/*scroll text event*/
+.fromTopIn
+{
+    transition: transform 1.0s ease, opacity 1.0s ease;
+    
+    transform: translate(0,0);
+    opacity: 1.0;
+}
+
+.fromTopOut
+{
+    transition: transform 1.0s ease, opacity 1.0s ease;
+    
+    transform: translate(0,-70px);
+    opacity: 0.0;
+}
+
+@keyframes chevronAnimation {
+    0% {
+        transform: translate(0,0) scale(1.0,1.0);
+    }
+    50% {
+        transform: translate(0,5px) scale(0.8,0.8);
+    }
+    100% {
+        transform: translate(0,0) scale(1.0,1.0);
+    }
+}
+
+/**
+ * Responsiveness
+ */
+@media screen and (max-width: 1024px)
+{	
+    body
+    {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{	
+    h1 span
+    {
+        display: block;
+    }
+    
+    div.block
+    {
+        height: 85vh;
+        padding: 15vh 15vw 0 15vw;
+    }
+}
+
+@media screen and (max-width: 420px)
+{	
+    body
+    {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 360px)
+{	
+    h1
+    {
+        font-size: 3em;
+    }
+}
+
+
+
